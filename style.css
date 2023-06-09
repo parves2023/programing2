@@ -70,8 +70,6 @@ a{
 #check{
     display: none;
     
-
-
 }
 
 
@@ -476,13 +474,6 @@ footer{
 
 
 
-
-
-
-
-
-
-
 /*footer end*/
 
 @media (max-width:768px){
@@ -507,9 +498,7 @@ footer{
         padding-top: 85px;
         flex-wrap: wrap;
     }
-    element.style {
-        inline-size: -webkit-fill-available;
-    }
+ 
     .half h1 {
         font-size: 53px;
         line-height: 48px;
@@ -536,11 +525,15 @@ footer{
         padding-left: 50px;
         color: #000;
     }
+    #check:checked ~ ul {
+        left: 0;
+    }
+
     header .link ul{
         position: fixed;
-        width: 50%;
+        width: 100%;
         height: 100vh;
-        transform: translate(-74px, 21px);
+        transform: translate(-74px, -3px);
         background-color: #f9f9ff;
         top: 54px;
         left: -200%;
@@ -711,11 +704,6 @@ footer {
 .link {
     margin-top: 20px;
 }
-
-
-
-
-
 
 
 }
